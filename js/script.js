@@ -1,6 +1,11 @@
 $("document").ready(function(){
-    var newText = $("<p>");
-    newText.append("<h1>i replaced the lorem</h1>");
+    $("#textbox").on("click", whenMouseIsClicked);
+    $("#textbox").on("mouseleave", whenMouseLeaves);
 
-    $("#textbox").html(newText)
+    function whenMouseIsClicked(){
+        $("#textbox").html("<h1>you clicked me</h1>")
+    }
+    function whenMouseLeaves(){
+        $("#textbox").html("<h1>you LEFT ME</h1>")
+    }
 });
