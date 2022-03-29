@@ -1,11 +1,8 @@
 $("document").ready(function(){
-    $("#textbox").on("click", whenMouseIsClicked);
-    $("#textbox").on("mouseleave", whenMouseLeaves);
-
-    function whenMouseIsClicked(){
-        $("#textbox").html("<h1>you clicked me</h1>")
-    }
-    function whenMouseLeaves(){
-        $("#textbox").html("<h1>you LEFT ME</h1>")
-    }
+    $("#show").on("click", function(){
+        $("#textbox").show();
+    })
+    $("#hide").on("click", function(){
+        $("#textbox").hide();
+    })
 });
