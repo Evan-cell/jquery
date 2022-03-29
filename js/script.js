@@ -1,4 +1,8 @@
 $("document").ready(function(){
+    
+    $("#toggleme").click(function(){
+        $("#togbox").toggle(2000, "swing")
+    })
 
     $("#slide-up").click(function(){
         $("#textkim").slideUp("2000", "linear")
