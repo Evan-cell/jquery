@@ -1,3 +1,6 @@
 #textbox{
     display: none;
 }
+.highlight{
+    color: red;
+}
